@@ -3,7 +3,7 @@ body {
   background: #fff7f5;
   font-family: 'Span', sans-serif;
   font-weight: 800;
-
+  box-sizing: border-box;
 }
 img{
   height: 80%;
@@ -12,6 +12,7 @@ img{
   display: flex;
   width: 100%;
   height: 80px;
+  text-decoration: none;
 }
 .navbar-brand{
   display: flex;
@@ -93,131 +94,123 @@ nav a:hover::before {
   width: 100%;
 }
 
-a, a:hover, a:focus, a:active {
+.a, a:hover, a:focus, a:active {
   text-decoration: none;
   color:inherit;
 }
 .section{
   width: 80%;
-  min-height: 350px;
+  min-height: 200px;
   background-color: #ffff;
-}
-h2{
-  margin-top: 330px;
   float: center;
-  color:#FAE9D9;
-  font-family: 'Span', serif;
-  font-size: 50px;
 }
-section {
+.biography {
+  flex-wrap: wrap;
+  color: #707070;
+  font-family: "Poppins", normal;
+  text-align: center;
+  margin-left: 200px;
   z-index: 1000;
   width: 80%;
   display: space-evenly;
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  margin-top: 500px;
 }
-.headshot img{
-  float: right;
+h2{
+  margin-top: 200px;
+  color:#fbd7b8;
+  font-family: 'Span', serif;
+  font-size: 50px;
+}
+.headshot{
+  justify-content: center;
   border-radius: 25px;
   width: 50%;
   height: 50%;
-  margin-right: 300px;
+  display: space-evenly;
 }
 h3{
   font-family: 'Span', serif;
   font-size: 40px;
+  color:#fbd7b8;
 }
-.bio {
-  width: 700px;
-  height: 700px;
+.designers{
   flex-wrap: wrap;
-  float: left;
-  background-color: white;
   color: #707070;
   font-family: "Poppins", normal;
   text-align: center;
   margin-left: 200px;
+  z-index: 1000;
+  width: 80%;
+  display: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
 }
-
-.footer-distributed {
-  background-color: #EAC7B4;
-  box-sizing: border-box;
-  width: 100%;
+.portfolio {
+  display:inline-block;
+  flex-wrap: wrap;
+  color: #707070;
+  font-family: "Poppins", normal;
   text-align: center;
-    font-family: 'Span', sans-serif;
+  margin-left: 200px;
+  z-index: 1000;
+  width: 80%;
+  display: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.porfolio img{
+  object-fit: cover;
+}
+.column {
+  justify-content: center;
+  width: 50%;
+  padding: 0 10px;
+}
+.row {
+  margin: 0 -5px;
+}
+.row:after {
+  display: table;
+  clear: both;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #feead8;
+  color: #707070;
+}
+.footer {
+  background-color: #EAC7B4;
+  width: 100%;
+  font-family: 'Span', sans-serif;
   padding: 10px 10px;
   margin-top: 100px;
   font-size: 24px;
-}
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 30px;
-}
-.footer-distributed .footer-left {
-  width: 33.3%;
   color: #ffffff;
-}
-.footer-distributed .footer-links {
-  color: #ffffff;
-  margin: 20px 0 60px;
-  padding: 0;
-}
-
-.footer-distributed .footer-links a {
-  display: block;
-  line-height: 2;
   text-decoration: none;
-  color: inherit;
-  font-size: 24px;
-}
-
-.footer-distributed .footer-company-name {
-  color: #707070;
-  font-size: 30px;
-  font-weight: normal;
-  margin: 0;
-}
-.footer-distributed .footer-center {
-  width: 35%;
-}
-.footer-distributed .footer-center i {
-  background-color: #EAC7B4;
-  color: #ffffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 25%;
+  flex-wrap: wrap;
   text-align: center;
-  line-height: 42px;
-  margin: 0px;
-}
-.footer-distributed .footer-center i.fa-envelope {
-  font-size: 18px;
-  line-height: 38px;
-}
-.footer-distributed .footer-center p {
-  display: inline-block;
-  color: #ffffff;
-  margin: 0;
-}
-.footer-distributed .footer-center p span {
-  display: block;
-  font-size: 24px;
-  line-height: 2;
-}
-.footer-distributed .footer-center p a {
-  color: #ffffff;
-  text-decoration: none;
+  z-index: 1000;
+  display: space-evenly;
+  justify-content: center;
+  position: relative;
 }
 
 @media screen and (max-width: 640px) {
   .body {
     float: none;
     width: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 }
