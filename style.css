@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #fae9d9;
+    background: #fff7f5;
     font-family: 'Span', sans-serif;
     font-weight: 800;
 
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background: #fae9d9;
+  background: #fff7f5;
 }
 
 header::after {
@@ -80,7 +80,7 @@ nav a:hover::before {
 h2{
   margin-top: 330px;
   float: center;
-  color:#E6DCD2;
+  color:#FAE9D9;
   font-family: 'Span', serif;
   font-size: 50px;
 }
